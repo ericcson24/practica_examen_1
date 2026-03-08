@@ -1,0 +1,76 @@
+.cardLink {
+  display: block;
+  border-radius: 16px;
+}
+
+.cardLink:focus-visible {
+  outline: 3px solid #ff9f4a;
+  outline-offset: 2px;
+}
+
+.card {
+  border: 1px solid #ead4b4;
+  border-radius: 16px;
+  padding: 14px;
+  background:
+    radial-gradient(circle at 0 0, rgb(255 255 255 / 70%) 0, transparent 55%),
+    linear-gradient(145deg, #fff8eb, #ffe4ba);
+  min-height: 220px;
+  box-shadow: 0 8px 18px rgb(65 43 20 / 10%);
+  transition: transform 180ms ease, box-shadow 180ms ease;
+  display: flex;
+  flex-direction: column;
+}
+
+.cardLink:hover .card {
+  transform: translateY(-3px);
+  box-shadow: 0 14px 24px rgb(65 43 20 / 16%);
+}
+
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.id {
+  font-size: 0.76rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #6c5034;
+}
+
+.pill {
+  font-size: 0.72rem;
+  font-weight: 700;
+  color: #a24f00;
+  border: 1px solid #edc28a;
+  background-color: #fff6e8;
+  border-radius: 999px;
+  padding: 4px 9px;
+}
+
+.name {
+  margin-top: auto;
+  color: #2f1f13;
+  font-size: 1.18rem;
+  letter-spacing: 0.01em;
+}
+
+.visual {
+  margin: 12px auto 16px;
+  width: 120px;
+  height: 120px;
+  border-radius: 999px;
+  background: radial-gradient(circle at 50% 45%, #fffef8 0, #ffe0b6 75%);
+  border: 1px solid #edcfaa;
+  display: grid;
+  place-items: center;
+}
+
+.image {
+  width: 96px;
+  height: 96px;
+  object-fit: contain;
+  filter: drop-shadow(0 8px 8px rgb(90 58 23 / 24%));
+}
