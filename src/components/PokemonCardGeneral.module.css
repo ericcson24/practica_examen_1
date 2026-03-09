@@ -1,6 +1,9 @@
 .cardLink {
   display: block;
   border-radius: 16px;
+  margin-top: 8px;
+  text-decoration: none;
+  color: inherit;
 }
 
 .cardLink:focus-visible {
@@ -22,7 +25,11 @@
   flex-direction: column;
 }
 
-.cardLink:hover .card {
+.cardLink:hover .name {
+  color: #1f1209;
+}
+
+.card:hover {
   transform: translateY(-3px);
   box-shadow: 0 14px 24px rgb(65 43 20 / 16%);
 }
@@ -31,6 +38,12 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.badges {
+  display: flex;
+  align-items: center;
+  gap: 6px;
 }
 
 .id {
@@ -50,11 +63,22 @@
   padding: 4px 9px;
 }
 
+.cartPill {
+  font-size: 0.72rem;
+  font-weight: 800;
+  color: #7c4300;
+  border: 1px solid #f1c78f;
+  background-color: #fff2dd;
+  border-radius: 999px;
+  padding: 4px 9px;
+}
+
 .name {
   margin-top: auto;
   color: #2f1f13;
   font-size: 1.18rem;
   letter-spacing: 0.01em;
+  text-align: center;
 }
 
 .visual {
@@ -73,4 +97,55 @@
   height: 96px;
   object-fit: contain;
   filter: drop-shadow(0 8px 8px rgb(90 58 23 / 24%));
+}
+
+.buyButton {
+  margin-top: 12px;
+  border: 0;
+  border-radius: 10px;
+  background: linear-gradient(180deg, #ff8d2c, #f47300);
+  color: #fff;
+  font-weight: 700;
+  padding: 9px 10px;
+  cursor: pointer;
+}
+
+.buyButton:hover {
+  filter: brightness(0.95);
+}
+
+.buyControls {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+}
+
+.miniButton {
+  border: 1px solid #efcca2;
+  border-radius: 8px;
+  background: #fff6e9;
+  color: #7f4b0f;
+  width: 30px;
+  height: 30px;
+  font-size: 1rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.miniButton:hover {
+  background: #ffeacc;
+}
+
+.qtyValue {
+  min-width: 48px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #8b540f;
+  border: 1px solid #efcca2;
+  border-radius: 999px;
+  background: #fff1d8;
+  padding: 5px 10px;
 }
